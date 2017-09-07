@@ -1,6 +1,6 @@
 ﻿namespace estdat
 {
-    partial class Datos_Abstractos__Practica_1_2
+    partial class AbstractDataType_Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -37,11 +37,11 @@
             this.btnCapturar = new System.Windows.Forms.Button();
             this.btnReiniciar = new System.Windows.Forms.Button();
             this.dGVElementos = new System.Windows.Forms.DataGridView();
-            this.lblSelectElement = new System.Windows.Forms.Label();
-            this.lblDataType = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSelectElement = new System.Windows.Forms.Label();
+            this.lblDataType = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dGVElementos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,15 +51,16 @@
             this.txtElemento.Name = "txtElemento";
             this.txtElemento.Size = new System.Drawing.Size(139, 20);
             this.txtElemento.TabIndex = 0;
+            this.txtElemento.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtElemento_KeyDown);
             // 
             // lblTextbox
             // 
             this.lblTextbox.AutoSize = true;
             this.lblTextbox.Location = new System.Drawing.Point(12, 15);
             this.lblTextbox.Name = "lblTextbox";
-            this.lblTextbox.Size = new System.Drawing.Size(82, 13);
+            this.lblTextbox.Size = new System.Drawing.Size(84, 13);
             this.lblTextbox.TabIndex = 1;
-            this.lblTextbox.Text = "Elemento [0,0] *";
+            this.lblTextbox.Text = "Elemento [0,0] =";
             // 
             // btnCapturar
             // 
@@ -79,6 +80,7 @@
             this.btnReiniciar.TabIndex = 3;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // dGVElementos
             // 
@@ -103,23 +105,6 @@
             this.dGVElementos.RowHeadersWidth = 50;
             this.dGVElementos.Size = new System.Drawing.Size(375, 150);
             this.dGVElementos.TabIndex = 4;
-            // 
-            // lblSelectElement
-            // 
-            this.lblSelectElement.AutoSize = true;
-            this.lblSelectElement.Location = new System.Drawing.Point(12, 102);
-            this.lblSelectElement.Name = "lblSelectElement";
-            this.lblSelectElement.Size = new System.Drawing.Size(155, 13);
-            this.lblSelectElement.TabIndex = 5;
-            this.lblSelectElement.Text = "Elemento [0,0]. Seleccionado =\r\n";
-            // 
-            // lblDataType
-            // 
-            this.lblDataType.AutoSize = true;
-            this.lblDataType.Location = new System.Drawing.Point(245, 17);
-            this.lblDataType.Name = "lblDataType";
-            this.lblDataType.Size = new System.Drawing.Size(0, 13);
-            this.lblDataType.TabIndex = 6;
             // 
             // Column1
             // 
@@ -151,7 +136,24 @@
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
-            // Datos_Abstractos__Practica_1_2
+            // lblSelectElement
+            // 
+            this.lblSelectElement.AutoSize = true;
+            this.lblSelectElement.Location = new System.Drawing.Point(12, 102);
+            this.lblSelectElement.Name = "lblSelectElement";
+            this.lblSelectElement.Size = new System.Drawing.Size(155, 13);
+            this.lblSelectElement.TabIndex = 5;
+            this.lblSelectElement.Text = "Elemento [0,0]. Seleccionado =\r\n";
+            // 
+            // lblDataType
+            // 
+            this.lblDataType.AutoSize = true;
+            this.lblDataType.Location = new System.Drawing.Point(245, 17);
+            this.lblDataType.Name = "lblDataType";
+            this.lblDataType.Size = new System.Drawing.Size(0, 13);
+            this.lblDataType.TabIndex = 6;
+            // 
+            // AbstractDataType_Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -163,9 +165,9 @@
             this.Controls.Add(this.btnCapturar);
             this.Controls.Add(this.lblTextbox);
             this.Controls.Add(this.txtElemento);
-            this.Name = "Datos_Abstractos__Practica_1_2";
+            this.Name = "AbstractDataType_Form2";
             this.Text = "Datos Abstractos - Practica 1";
-            this.Load += new System.EventHandler(this.Datos_Abstractos__Practica_1_2_Load);
+            this.Load += new System.EventHandler(this.AbstractDataType_Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVElementos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

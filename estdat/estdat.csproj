@@ -45,17 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos Abstractos - Practica 1.cs">
+    <Compile Include="AbstractDataType_Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Datos Abstractos - Practica 1.Designer.cs">
-      <DependentUpon>Datos Abstractos - Practica 1.cs</DependentUpon>
+    <Compile Include="AbstractDataType_Form1.Designer.cs">
+      <DependentUpon>AbstractDataType_Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Datos Abstractos -Practica 1-2.cs">
+    <Compile Include="AbstractDataType_Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Datos Abstractos -Practica 1-2.Designer.cs">
-      <DependentUpon>Datos Abstractos -Practica 1-2.cs</DependentUpon>
+    <Compile Include="AbstractDataType_Form2.Designer.cs">
+      <DependentUpon>AbstractDataType_Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,11 +65,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Datos Abstractos - Practica 1.resx">
-      <DependentUpon>Datos Abstractos - Practica 1.cs</DependentUpon>
+    <Compile Include="Validations.cs" />
+    <EmbeddedResource Include="AbstractDataType_Form1.resx">
+      <DependentUpon>AbstractDataType_Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Datos Abstractos -Practica 1-2.resx">
-      <DependentUpon>Datos Abstractos -Practica 1-2.cs</DependentUpon>
+    <EmbeddedResource Include="AbstractDataType_Form2.resx">
+      <DependentUpon>AbstractDataType_Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

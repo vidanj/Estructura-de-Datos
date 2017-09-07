@@ -16,7 +16,7 @@ namespace estdat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Datos_Abstractos___Practica_1());
+            Application.Run(new AbstractDataType_Form1());
         }
     }
 }
