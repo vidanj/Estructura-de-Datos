@@ -141,6 +141,7 @@
             this.btnIniciar.TabIndex = 1;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // Datos_Abstractos___Practica_1
             // 

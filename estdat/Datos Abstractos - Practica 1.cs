@@ -16,5 +16,24 @@ namespace estdat
         {
             InitializeComponent();
         }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            new Datos_Abstractos__Practica_1_2(selected_RadioButton()).ShowDialog(); 
+        }
+
+        private string selected_RadioButton()
+        {
+            string result = null;
+            result = radioButton1.Checked == true ? "int" : result;
+            result = radioButton2.Checked == true ? "float" : result;
+            result = radioButton3.Checked == true ? "bool" : result;
+            result = radioButton4.Checked == true ? "char" : result;
+            result = radioButton5.Checked == true ? "object" : result;
+            result = radioButton6.Checked == true ? "ADT1" : result;
+            result = radioButton7.Checked == true ? "ADT2" : result;
+            //MessageBox.Show(result);
+            return result;
+        }
     }
 }
